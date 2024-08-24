@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -43,6 +47,7 @@ header{
     left: 0;
     z-index: 100;
     transition: top 0.8s ease-in-out;
+    
 }
 
 .logo{
@@ -85,6 +90,7 @@ nav a.active{
         padding: 1rem solid;
         background-color: #161616;
         border-top: 0.1rem solid rgba(0,0,0,0.1);
+        box-shadow: #161616;
     }
 
     nav.active{
@@ -349,7 +355,7 @@ span{
 
 .skills-container::after {
     content: "";
-    display: table;
+    display: inline-block;
     clear: both; /* Clears the floats to ensure container height is maintained */
 }
 
@@ -362,3 +368,78 @@ span{
         margin-right: 0; /* Removes margin-right to prevent unwanted spacing on smaller screens */
     }
 }
+
+/* .experience{
+    height: 70vh;
+    width: 100%;
+} */
+
+.footer-section {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw;  /* Full width of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire section */
+    opacity: 0.3; /* Lower opacity for the background image */
+    z-index: 1;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer nav i,
+footer nav a {
+    font-size: 2rem;
+    color: white;
+    margin: 0.5rem 0; /* Adjust spacing between the items */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+footer nav i:hover,
+footer nav a:hover {
+    color: #80b461;
+}
+
+footer nav a {
+    display: inline-flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    footer nav i,
+    footer nav a {
+        font-size: 1.8rem;
+    }
+}
+
