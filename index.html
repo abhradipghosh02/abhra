@@ -5,23 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>myprofile</title>
 </head>
 <body>
     <header>
         <a href="#" class="logo">Abhra</a>
-
+    
         <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="#" >Skills</a>
-            <a href="#" >Experience</a>
-            <a href="Resume.html" >Resume</a>
-            <a href="Projects.html" >Projects</a>
-            <a href="Contact.html" >Contact</a>
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <!-- <a href="Resume.html">Resume</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Contact.html">Contact</a> -->
         </nav>
+        
     </header>
-    <section class="home">
+    
+    <section id= "home" class="home">
         <div class="home-img">
             <img src="main.jpg" alt="My image">
         </div>
@@ -32,14 +35,14 @@
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/abhradip-ghosh-377688305/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com/abhradip.ghosh.908"><i class="fa-brands fa-facebook"></i></a>
                 <a href="instagram.html"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <a href="#" class="btn">Hire me</a>
         </div>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class="skills-container">
             <h1 class="skills-title">Skills</h1>
             
@@ -81,18 +84,23 @@
     </section>
     
 
-    <section id="experience" class="experience">
+    <!-- <section id="experience" class="experience">
         
 
+    </section> -->
+    <section class="footer-section">
+        <img src="laptop.jpg" alt="background Image" class="background-image">
+        <div class="footer-content">
+            <footer>
+                <nav>
+                    <i class="fa-solid fa-book-open"><a href="Resume.html">Resume</a></i>
+                    <i class="fa-solid fa-flask"><a href="Projects.html">Projects</a></i>
+                    <i class="fa-solid fa-address-book"><a href="Contact.html">Contact</a></i>        
+                </nav>
+            </footer>
+        </div>
     </section>
     
-    <footer>
-        <nav>
-            <a href="Resume.html">Resume</a>
-            <a href="Projects.html">Projects</a>
-            <a href="Contact.html">Contact</a>
-        </nav>
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>
